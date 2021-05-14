@@ -150,7 +150,7 @@ class Connect4 {
             else
                 break;
         }
-        for(int r = row - 1; r >= 0; r++) {
+        for(int r = row - 1; r >= 0; r--) {
             if(grid[r][col] == color)
                 v++;
             else
