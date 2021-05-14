@@ -55,6 +55,7 @@ public class Driver extends JFrame {
 							boardButtons[row][col].setBackground(Color.RED);
 							whoPlayed = "RED";
 							
+							//Change whose turn it is
 							turn = 2;
 							for(int b = 0; b < 7; b++)
 								buttons[b].setBackground(Color.YELLOW);
@@ -63,6 +64,7 @@ public class Driver extends JFrame {
 							boardButtons[row][col].setBackground(Color.YELLOW);
 							whoPlayed = "YELLOW";
 							
+							//Change whose turn it is
 							turn = 1;
 							for(int b = 0; b < 7; b++)
 								buttons[b].setBackground(Color.RED);
