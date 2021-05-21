@@ -46,11 +46,14 @@ public class Driver extends JFrame {
 	private class ButtonListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent e) {
+			
 			for(int col = 0; col < 7; col++) {
 				if(e.getSource() == buttons[col]) {
+					
 					if(board.validCol(col)) {
 						int row = board.playTurn(turn, col);
 						String whoPlayed = new String();			
+						
 						if(turn == 1) {
 							boardButtons[row][col].setBackground(Color.RED);
 							whoPlayed = "RED";
@@ -74,10 +77,12 @@ public class Driver extends JFrame {
 							JOptionPane.showMessageDialog(null, whoPlayed + " WINS!");
 							System.exit(0);
 						}
-						break;
 					}
+					
+					break;
 				}
 			}
+			
 		} //end method
 		
 	} //end class
